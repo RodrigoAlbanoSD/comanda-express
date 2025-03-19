@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Comanda Express",
+    "slug": "sales-app",
+    "version": "1.1.2",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#e4d9fd"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 1,
+      "package": "com.rodrigocastr.comandaexpress"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4ca9e308-d73b-418e-9e87-d399d2a67587"
+      }
+    }
+    
+  }
+}
+
