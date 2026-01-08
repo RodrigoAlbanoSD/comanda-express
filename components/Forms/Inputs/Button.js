@@ -1,18 +1,19 @@
-import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { GlobalStyles } from '../../../styles/constants';
+import { Pressable, StyleSheet, Text, View } from "react-native";
+import { GlobalStyles } from "../../../styles/constants";
 
 function Button({ children, onPress, mode, style, disabled }) {
   return (
-    <View style={style}
-    >
+    <View style={style}>
       <Pressable
         onPress={onPress}
         style={({ pressed }) => pressed && styles.pressed}
-        disabled= {disabled}
+        disabled={disabled}
       >
-        <View style={[styles.button, mode === 'flat' && styles.flat]}
-        >
-          <Text style={[styles.buttonText, mode === 'flat' && styles.flatText]}>
+        <View style={[styles.button, mode === "flat" && styles.flat]}>
+          <Text
+            numberOfLines={1}
+            style={[styles.buttonText, mode === "flat" && styles.flatText]}
+          >
             {children}
           </Text>
         </View>
@@ -28,12 +29,12 @@ const styles = StyleSheet.create({
     padding: 8,
   },
   flat: {
-    backgroundColor: 'transparent',
+    backgroundColor: "transparent",
   },
   buttonText: {
-    color: 'white',
-    textAlign: 'center',
-    fontSize:20,
+    color: "white",
+    textAlign: "center",
+    fontSize: 20,
   },
   flatText: {
     color: GlobalStyles.colors.primary200,
